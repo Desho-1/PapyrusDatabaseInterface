@@ -33,7 +33,7 @@ public class Login extends javax.swing.JFrame {
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            con1 = DriverManager.getConnection("jdbc:mysql://localhost/shop?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC", "root", "signmein");
+            con1 = DriverManager.getConnection("jdbc:mysql://localhost/shop?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC", "root", "");
             st1 = con1.createStatement();
         } catch (ClassNotFoundException | SQLException e) {
             System.out.println(e);
